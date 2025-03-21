@@ -34,7 +34,7 @@ const solarSystem = [
 let key = "diameter"; 
 myObject[key] = "7,917.5 miles";
 solarSystem[2][key] = "7,917.5 miles"; 
-console.log(solarSystem[2]);
+console.log(`5.` , solarSystem[2]);
 
   // 6. Change Mercury's ringSystem boolean to true.
   function changeHandler(index) {
@@ -43,21 +43,22 @@ console.log(solarSystem[2]);
 
 changeHandler(0);
 
-console.log(solarSystem[0]);
+console.log(`6.` , solarSystem[0]);
   // 7. Change Uranus' moon "Umbriel" to "Oberon"
   solarSystem[6].moons[3] = "Oberon";
 
-  console.log(solarSystem[6].moons);
+  console.log(`7.` , solarSystem[6].moons);
   
   // 8. Iterate through the solarSystem array and print only the objects 
   // that have a ringSystem (where ringSystem: true), and ignore the others.
   
   solarSystem.forEach(planet => {
     if (planet.ringSystem) {
-        console.log(planet);
+        console.log(`8.` , planet);
     }
 });
 
+console.log(`-----Part 2-----`)
   //////////////////////////////
   // The Solar System, Part 2 //
   //////////////////////////////
@@ -210,14 +211,14 @@ console.log(solarSystem[0]);
   
   // 1. Console.log the mass of Mercury
   
-  console.log(system.mercury.mass)
+  console.log(`1.` , system.mercury.mass)
   // 2. Console.log the eccentricity of Venus
-  console.log(system.venus.eccentricity)
+  console.log(`2.`, system.venus.eccentricity)
   
   // 3. Console.log the sum of the number of satellites of 
   // Jupiter, Saturn, Uranus, and Neptune (131)
   
-  console.log(system.jupiter.satellites + system.saturn.satellites + system.uranus.satellites + system.neptune.satellites)
+  console.log(`3.` , system.jupiter.satellites + system.saturn.satellites + system.uranus.satellites + system.neptune.satellites)
   // 4. Write a conditional that checks if Mercury's radiusp is 
   // a string (remember the typeof command). If Mercury's radiusp is a string, 
   // change the value to be the same as its radiuse value. 
@@ -227,10 +228,10 @@ console.log(solarSystem[0]);
     system.mercury.radiusp = system.mercury.radiuse;
 }
 
-console.log(system.mercury);
+console.log(`4.`, system.mercury);
   // 5. Console.log Mercury's radiusp (should be 2439, not 'same').
   
-  console.log(system.mercury.radiusp)
+  console.log(`5.` , system.mercury.radiusp)
   // 6. Find the difference between Jupiter's momentum 
   // and Pluto's momentum. (To get momentum, you'll want 
   // the product of velocity and mass).const jupiterMomentum = system.jupiter.mass * system.jupiter.velocity;
